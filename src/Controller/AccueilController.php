@@ -15,12 +15,5 @@ class AccueilController extends AbstractController
     {
         return $this->render('accueil/index.html.twig');
     }
-
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contact(): Response
-    {
-        return $this->render('accueil/index.html.twig');
-    }
+    
 }
