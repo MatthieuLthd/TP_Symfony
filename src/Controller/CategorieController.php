@@ -13,6 +13,7 @@ class CategorieController extends AbstractController
     /**
      * @Route("/categories", name="categories", methods={"GET"})
      */
+    
     public function listeCategories(CategorieRepository $repo): Response
     {
         $categories=$repo->findAll();
