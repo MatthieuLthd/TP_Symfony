@@ -1,7 +1,9 @@
-<div class="card mb-3" {% if leContact.sexe == 0 %}
-{% endif %}
->
-    <h4 class="card-header">{{ leContact.nom}} {{ leContact.prenom }}</h4>
+<div class="card mb-3 {% if leContact.sexe == 0 %} border-dark {% else %} border-light {% endif %}">
+    <h4 class="card-header">
+        {{ leContact.nom}}
+        {{ leContact.prenom }}
+    </h4>
+
     <img class="avatar mx-auto my-3" style="height: auto; max-width: 200px; display: block;" src=" {{ leContact.avatar }} " alt="Card image">
     <ul class="list-group list-group-flush">
         <li class="list-group-item">{{ leContact.rue }}</li>
